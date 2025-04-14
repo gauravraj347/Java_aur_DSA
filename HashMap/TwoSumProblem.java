@@ -38,8 +38,9 @@ public class TwoSumProblem {
         for (int i = 0; i < n; i++) {
             // Special condition: If the array element itself is equal to the target and 0 exists in the map
             if (arr[i] == target && map.containsKey(0)) {
-                result[0] = i;
-                result[1] = map.get(0);
+                result[0] = i;    //get index of value
+                result[1] = map.get(0);  // get index of where 0 present
+                
                 found = true;
                 break;
             }
